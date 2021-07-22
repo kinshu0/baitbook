@@ -6,11 +6,13 @@ const linkStyle = {
 }
 
 
+
+
 export const Nav = (props) => {
   return (
-    <nav>
-      <Link style={linkStyle} to='/home'>
-        <img src={logolight} className="nav-logo" alt="baitbook" />
+    <nav className="top-nav">
+      <Link style={linkStyle} to='/'>
+        <img src={logolight} className="logo" alt="baitbook" />
       </Link>
       <ul className="nav-links">
         <Link style={linkStyle} to='/about'>
@@ -23,3 +25,22 @@ export const Nav = (props) => {
     </nav>
   )
 }
+
+
+// export const Nav = (props) => {
+//   return (
+//     <nav>
+//       <Link style={linkStyle} to='/home'>
+//         <img src={logolight} className="nav-logo" alt="baitbook" />
+//       </Link>
+//       <ul className="nav-links">
+//         <Link style={linkStyle} to='/about'>
+//           <li>ABOUT US</li>
+//         </Link>
+//         <Link style={linkStyle} to='/lol'>
+//           <li>Lol</li>
+//         </Link>
+//       </ul>
+//     </nav>
+//   )
+// }

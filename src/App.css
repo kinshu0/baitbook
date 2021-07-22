@@ -1,24 +1,329 @@
+/*
+
+  RESPONSIVE VIEWPORT WIDTH COLUMNS
+
+*/
+
+/* Extra small devices (phones, 600px and down) */
+.vw-1 {width: 8.33vw;}
+.vw-2 {width: 16.66vw;}
+.vw-3 {width: 25vw;}
+.vw-4 {width: 33.33vw;}
+.vw-5 {width: 41.66vw;}
+.vw-6 {width: 50vw;}
+.vw-7 {width: 58.33vw;}
+.vw-8 {width: 66.66vw;}
+.vw-9 {width: 75vw;}
+.vw-10 {width: 83.33vw;}
+.vw-11 {width: 91.66vw;}
+.vw-12 {width: 100vw;}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .vw-s-1 {width: 8.33vw;}
+  .vw-s-2 {width: 16.66vw;}
+  .vw-s-3 {width: 25vw;}
+  .vw-s-4 {width: 33.33vw;}
+  .vw-s-5 {width: 41.66vw;}
+  .vw-s-6 {width: 50vw;}
+  .vw-s-7 {width: 58.33vw;}
+  .vw-s-8 {width: 66.66vw;}
+  .vw-s-9 {width: 75vw;}
+  .vw-s-10 {width: 83.33vw;}
+  .vw-s-11 {width: 91.66vw;}
+  .vw-s-12 {width: 100vw;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .vw-m-1 {width: 8.33vw;}
+  .vw-m-2 {width: 16.66vw;}
+  .vw-m-3 {width: 25vw;}
+  .vw-m-4 {width: 33.33vw;}
+  .vw-m-5 {width: 41.66vw;}
+  .vw-m-6 {width: 50vw;}
+  .vw-m-7 {width: 58.33vw;}
+  .vw-m-8 {width: 66.66vw;}
+  .vw-m-9 {width: 75vw;}
+  .vw-m-10 {width: 83.33vw;}
+  .vw-m-11 {width: 91.66vw;}
+  .vw-m-12 {width: 100vw;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .vw-l-1 {width: 8.33vw;}
+  .vw-l-2 {width: 16.66vw;}
+  .vw-l-3 {width: 25vw;}
+  .vw-l-4 {width: 33.33vw;}
+  .vw-l-5 {width: 41.66vw;}
+  .vw-l-6 {width: 50vw;}
+  .vw-l-7 {width: 58.33vw;}
+  .vw-l-8 {width: 66.66vw;}
+  .vw-l-9 {width: 75vw;}
+  .vw-l-10 {width: 83.33vw;}
+  .vw-l-11 {width: 91.66vw;}
+  .vw-l-12 {width: 100vw;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .vw-xl-1 {width: 8.33vw;}
+  .vw-xl-2 {width: 16.66vw;}
+  .vw-xl-3 {width: 25vw;}
+  .vw-xl-4 {width: 33.33vw;}
+  .vw-xl-5 {width: 41.66vw;}
+  .vw-xl-6 {width: 50vw;}
+  .vw-xl-7 {width: 58.33vw;}
+  .vw-xl-8 {width: 66.66vw;}
+  .vw-xl-9 {width: 75vw;}
+  .vw-xl-10 {width: 83.33vw;}
+  .vw-xl-11 {width: 91.66vw;}
+  .vw-xl-12 {width: 100vw;}
+}
+
+/*
+
+  RESPONSIVE VIEWPORT WIDTH PADDINGS AND MARGINS
+
+*/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+}
+
+
+
+
 .App {
   text-align: center;
 }
 
-nav {
+
+
+/*
+
+  Navigation Bar
+
+*/
+
+
+nav.top-nav {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  min-height: 12vh;
+  justify-content: space-between;
+  height: 12vh;
   background: #4267B2;
   color: white;
+  padding: 0px 10px;
 }
+
+@media screen and (min-width: 600px) {
+  nav.top-nav {
+    padding: 20px
+  }
+}
+
+
+nav .logo {
+  width: 30vw;
+}
+
+@media screen and (min-width: 600px) {
+  nav .logo {
+    width: 25vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  nav .logo {
+    width: 20vw;
+  }
+}
+
 
 .nav-links {
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  width: 50vw;
-  align-items: center;
+  flex-direction: row;
 }
 
-.nav-logo {
-  min-width: 10vw;
+.nav-links li {
+  display: inline-block;
+  padding: 10px;
 }
+
+
+/* body {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./background-mobile.jpg');
+  background-position: 25% 25%;
+  background-repeat: no-repeat;
+} */
+
+body {
+  overflow: hidden;
+}
+
+
+
+.home-hero {
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('./background-mobile.jpg');
+  background-size: cover;
+  background-position: 25% 25%;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+
+@media screen and (min-width: 600px) {
+  .home-hero {  
+    justify-content: center;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./background-wide.jpg');
+    background-size: cover;
+    background-position: 25% 25%;
+    background-repeat: no-repeat;
+    align-items: center;
+  }
+}
+
+
+.home-hero h3 {
+  font-size: 1.5rem;
+  color: #222;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .home-hero h3 {
+    font-size: 1.5rem;
+    color: #222;
+    font-weight: 600;
+    font-style: italic;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .home-hero {  
+    justify-content:space-between;
+    height: 88vh;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./background-wide.jpg');
+    background-size: cover;
+    background-position: 25% 25%;
+    background-repeat: no-repeat;
+    align-items: center;
+    padding: 0 2.5rem;
+  }
+}
+
+.login-component {
+  border-radius: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  padding: 1.5rem 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #4267B2;
+}
+
+.login-component.form {
+  display: flex;
+  flex-direction: column;
+}
+.login-component h2 {
+  width: 80%;
+  margin: 0.2rem auto;
+}
+
+.login-component input {
+  border-radius: 0.3rem;
+  background:rgba(255, 255, 255, 0.8);
+  border: 0rem;
+  padding: 0.3rem;
+  width: 80%;
+  font-family: inherit;
+  margin-top: 0.5rem;
+  min-height: 1.5rem;
+}
+
+.login-component button {
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+hr {
+  width: 70%;
+  background-color: #aaa;
+  height: 1px;
+  border: none;
+  border-radius: 1px;
+}
+
+.login-component .signup {
+  background-color: rgb(50, 248, 0);
+  margin-top: 0.25rem;
+  margin-bottom: 0rem;
+}
+
+button {
+  background-color: #4267B2;
+  color: white;
+  border: 0rem;
+  padding: 0.3rem;
+  width: 80%;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+/* .home-hero {
+  height: 82vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./background-mobile.jpg');
+  background-size: cover;
+  background-position: 25% 25%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 600px) {
+  .home-hero {
+
+  }
+} */
