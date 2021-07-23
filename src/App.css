@@ -369,3 +369,8 @@ button {
   background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('./laughing-sunflower-wide.jpg') center;
   background-size: cover;
 }
+
+
+.small-link {
+  font-size: 0.75rem;
+}
