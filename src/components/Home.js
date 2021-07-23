@@ -1,10 +1,12 @@
 import { useState } from "react"
+import { Link } from "react-router-dom";
+
 
 function Home(props) {
     return (
         <div className="home-hero">
             <div>
-                <h3>We want all of your data right now!</h3>
+                <h3>C'mon join us! We want all of your data right now!</h3>
             </div>
             <LoginForm />
         </div>
@@ -27,13 +29,15 @@ function LoginForm(props) {
     return (
         <div className="login-component">
             <form>
-                <h2>Log in to baitbook</h2>
-                <input placeholder="username" type="username" value={username} onChange={handleUsernameChange}/>
+                <h2>Log in to <span style={{ color: '#F23D18' }}>bait</span>book</h2>
+                <input placeholder="username" type="username" value={username} onChange={handleUsernameChange} />
                 <input placeholder="password" type="password" value={password} onChange={handlePasswordChange} />
                 <button type="submit">Submit</button>
             </form>
-            <hr/>
-            <button className="signup">Create an Account</button>
+            <hr />
+            <Link to='/signup' className="signup-link">
+                <button className="signup">Create an Account</button>
+            </Link>
         </div>
     )
 }

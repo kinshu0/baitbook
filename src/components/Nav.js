@@ -18,9 +18,6 @@ export const Nav = (props) => {
         <Link style={linkStyle} to='/about'>
           <li>ABOUT US</li>
         </Link>
-        <Link style={linkStyle} to='/lol'>
-          <li>Lol</li>
-        </Link>
       </ul>
     </nav>
   )
