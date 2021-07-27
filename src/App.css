@@ -374,3 +374,58 @@ button {
 .small-link {
   font-size: 0.75rem;
 }
+
+
+.cards-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: linear-gradient(rgba(241, 154, 83, 0.2),  #f557278c, #efff1677, #ff4c16f5);
+}
+
+.profile-card {
+  padding: 2rem 0rem;
+  background-color: rgba(163, 253, 141, 0.2);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  align-items: center;
+  margin: 0.75rem;
+}
+
+
+.profile-card h1 {
+  font-size: 1.25rem;
+  margin: 0.5rem;
+}
+.profile-card h3 {
+  font-size: 1rem;
+  margin: 0.25rem
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+nav.top-nav-general {
+  background: #4267B2;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.go-back {
+  position: relative;
+  right: 80%;
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}

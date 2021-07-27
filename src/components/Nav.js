@@ -7,8 +7,16 @@ const linkStyle = {
 
 
 
+function NavBar(props) {
+  return (
+    <nav className="top-nav-general">
+      {props.children}
+    </nav>
+  )
+}
 
-export const Nav = (props) => {
+
+const Nav = (props) => {
   return (
     <nav className="top-nav">
       <Link style={linkStyle} to='/'>
@@ -24,20 +32,4 @@ export const Nav = (props) => {
 }
 
 
-// export const Nav = (props) => {
-//   return (
-//     <nav>
-//       <Link style={linkStyle} to='/home'>
-//         <img src={logolight} className="nav-logo" alt="baitbook" />
-//       </Link>
-//       <ul className="nav-links">
-//         <Link style={linkStyle} to='/about'>
-//           <li>ABOUT US</li>
-//         </Link>
-//         <Link style={linkStyle} to='/lol'>
-//           <li>Lol</li>
-//         </Link>
-//       </ul>
-//     </nav>
-//   )
-// }
+export { Nav, NavBar }

@@ -20,7 +20,10 @@ function LoginForm(props) {
                 <h2>Log in to <span style={{ color: '#F23D18' }}>bait</span>book</h2>
                 <input placeholder="username" type="username" value={username} onChange={handleUsernameChange} />
                 <input placeholder="password" type="password" value={password} onChange={handlePasswordChange} />
+
+            <Link to='/feed'>
                 <button type="submit">Submit</button>
+            </Link>
             </form>
             <hr />
             <Link to='/signup' className="signup-link">
